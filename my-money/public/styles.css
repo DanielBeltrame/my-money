@@ -1,5 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+
 .App {
-  padding: 2em 0 12em 0;
+  padding: 2em 0 2em 0;
+}
+
+/* ---------------------Header--------------------- */
+
+header {
+  background-image: url('./dollar.jpg');
+  background-attachment: fixed;
+  text-align: center;
 }
 
 .navbar {
@@ -9,17 +19,71 @@
   padding-top: 2em;
 }
 
-header {
-  background-image: url('./dollar.jpg');
-  background-attachment: fixed;
-  text-align: center;
+#navbar-outline {
+  background-color: rgb(15, 40, 15) !important;
 }
+
+#nav-brand {
+  color: rgb(0, 125, 32);
+  font-size: 175%;
+  font-weight: bold;
+
+  animation-name: hover-off;
+  animation-duration: .4s;
+
+  text-shadow: 3px 3px black;
+}
+
+#nav-brand:hover {
+  color: rgb(0, 200, 35);
+
+  animation-name: hover;
+  animation-duration: .4s;
+}
+
+#nav-link {
+  color: rgb(0, 125, 35);
+  font-size: 150%;
+  font-weight: 700;
+
+  animation-name: hover-off;
+  animation-duration: .4s;
+
+  text-shadow: 3px 3px black;
+}
+
+#nav-link:hover {
+  color: rgb(0, 200, 35);
+
+  animation-name: hover;
+  animation-duration: .4s;
+}
+
+#nav-container {
+  background-color: rgb(15, 20, 15);
+  border-radius: .7em;
+}
+
+/* ---------------------Header Text--------------------- */
 
 #header-h2 {
   color: white;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 3em;
-  font-weight: bold;
+  font-family: 'Orelega One', cursive;
+  font-size: 4.5em;
 
+  text-shadow: 4px 4px black;
   -webkit-text-stroke: 2px black;
+  padding-bottom: 4em;
+}
+
+/* ---------------------Animations--------------------- */
+
+@keyframes hover {
+  0% { color:rgb(0, 125, 35); }
+  100% { color: rgb(0, 200, 35); }
+}
+
+@keyframes hover-off {
+  0% { color: rgb(0, 200, 35); }
+  100% { color: rgb(0, 125, 35); }
 }

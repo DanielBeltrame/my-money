@@ -1,4 +1,3 @@
-// import ButtonTest from "./Button";
 import NavbarComp from "./partials/Navbar";
 import HeaderPresentation from "./HeaderPresentation";
 
@@ -8,6 +7,8 @@ function App() {
     <header>
       <div className="App">
         <NavbarComp />
+      </div>
+      <div className="header-text">
         <HeaderPresentation />
       </div>
     </header>
