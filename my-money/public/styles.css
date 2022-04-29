@@ -1,7 +1,25 @@
 .App {
+  padding: 2em 0 12em 0;
+}
+
+.navbar {
+  border-radius: 1em;
+
+  margin: 0em auto 4em;
+  padding-top: 2em;
+}
+
+header {
+  background-image: url('./dollar.jpg');
+  background-attachment: fixed;
   text-align: center;
 }
 
-.btn {
-  margin: 2em auto 2em;
+#header-h2 {
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 3em;
+  font-weight: bold;
+
+  -webkit-text-stroke: 2px black;
 }
