@@ -8,7 +8,7 @@ function App() {
       <div className="App">
         <NavbarComp />
       </div>
-      <div className="header-text">
+      <div id="header-text">
         <HeaderPresentation />
       </div>
     </header>
